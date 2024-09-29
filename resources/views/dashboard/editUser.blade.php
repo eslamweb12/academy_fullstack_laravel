@@ -7,7 +7,7 @@
     @auth()
     @if(auth()->user()->status=='admin')
 
-    <form method="POST" action="{{ route('updateUser', ['id' => $user->id]) }}">
+    <form method="POST" action="{{ route('updateUser', ['id' => $user->id]) }}"  style="margin-top: 80px; overflow: hidden">
         @csrf
 
 
